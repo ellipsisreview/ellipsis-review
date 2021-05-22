@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel='icon' href='ellipsisIcon.png' type='image/x-icon'/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href=index.css>
+    <script type="text/javascript" src = "script.js"></script>
+    <div class=topnav id=myTopnav>
+      <a href=index.html><img class="logo" src=ellipsisLong.svg></a>
+      <div class="container" onclick="menuBtnToggle(this)">
+        <span class="menuBtn" onclick="openOrCloseNav()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      
+        </span>
+    </div>
+      <div id="mySidenav" class="sidenav">
+        <a href=index.html>Home</a>
+        <a href=latestMeditations.html>Latest</a>
+        <a href=search.html>Search</a>
+        <a href=test.html style=color:black>Test</a>
+      </div>
+      
+      
+    </div>
+    
+  </head>
+  <body>
+    <h1></h1>
+   <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img  class="slideCrop" src="Eric Claassen's Background Photoshop Project (Spongebob with Greece's Greatest Thinkers!).jpg" style="width:100%">
+  <div class="text">"Of Intellect and Mediocrity": photo manipulation of Raphael's "School of Athens" by Desmond Jones</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <a href="meditation4.html">
+  <img class="slideCrop" src="augustineMeditating.jpg" style="width:100%">
+  <div class="text">The First Autobiography: Augustine's Confessions</div>
+  </a>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <a href=meditation3.html>
+  <img class="slideCrop" src="seawolfPic.jpg" style="width:100%">
+  <div class="text">Thoughts on London's "Sea-Wolf".</div>
+  </a>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="writingBody">
+      
+    <blockquote>"Man is a mystery: if you spend your entire life trying to puzzle it out, then do not say that you have wasted your time. I occupy myself with this mystery, because I want to be a man.” </blockquote>
+<div class="writings">
+    <p>&emsp;&emsp;Ellipsis is a meditative publication that aims to find and develop the omissions made by the ellipses of modern culture. This publication hopes to make these ellipses develop and mature into complete ideas that you may carry forever. May you develop the ellipses in your own life, and get closer to solving the mystery of man.</p>
+  <div class="signature">
+    <p style="text-align:right">
+      Sincerely,<br>
+      Desmond Jones <br> Founder and editor of Ellipsis
+      </p>
+      <img src="djSignature.svg">
+      </div>
+    </div>
+    </div>  
+  </div>
+    </div>
+
+
+<style>
+.footer {
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: whitesmoke;
+  color: black;
+  text-align: left;
+}
+.footerText{
+  margin-left: 5%
+}
+</style>
+
+
+
+<hr style="margin-top:15%">
+<div class=topnav id=myTopnav style="margin-top:2.5%">
+      <a href=contact.html style="color:black;text-decoration:none">Contact us</a>
+      <a href=latestMeditations.html style="color:black;text-decoration:none">&emsp;The Latest Meditations</a>
+      <a href=search.html style="color:black;text-decoration:none">&emsp;Search</a>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;float:right;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+    </div>
+
+<!--
+<div class="footer">
+  <p class="footerText">Footer</p>
+</div>
+-->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD386LU98pvB0OwUjMtiX6ELNHd_mEJpP0",
+    authDomain: "ellipsis-website-d5453.firebaseapp.com",
+    projectId: "ellipsis-website-d5453",
+    storageBucket: "ellipsis-website-d5453.appspot.com",
+    messagingSenderId: "284828527922",
+    appId: "1:284828527922:web:bb4d49e6ab223e8da07b2b",
+    measurementId: "G-WCH9DYWLRP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  </body>
+</html>

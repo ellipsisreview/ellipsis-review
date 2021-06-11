@@ -22,8 +22,8 @@
     </div>
       <div id="mySidenav" class="sidenav">
         
-        <a href=index.php>Home</a>
-        <a href=about.php>About us</a>
+        <a href=index.html>Home</a>
+        <a href=about.html>About us</a>
         <a href=latestMeditations.html>Latest</a>
         <a href=search.html>Search</a>
         <a href=data.php style=color:black>Test</a>
@@ -32,27 +32,7 @@
       
       
     </div>
-    <?php 
-      $articles = array(
-        array("The First Autobiography: Augustine's Confessions","augustine.jpeg","meditation4.html","Thoughts on the work and the author.","Desmond Jones"),
-        array("Thoughts on London's \"Sea-Wolf\".","jlondon.jpeg","meditation3.html","Is the will to power admirable or reprehensible?","Eric Claassen"),
-      );
-      $article1 = array(
-        "title" => "The First Autobiography: Augustine's Confessions",
-        "img" => "augustineMeditating.jpg",
-        "link" => "meditation4.html",
-      );
-      $article2 = array(
-        "title" => "Thoughts on London's \"Sea-Wolf\".",
-        "img" => "seawolfPic.jpg",
-      );
-      $sideVal = array(
-        "<a href=index.html>Home</a>",
-        "<a href=latestMeditations.html>Latest</a>",
-        "<a href=search.html>Search</a>",
-        "<a href=test.html style=color:black>Test</a>",
-      );
-      ?>
+    
     <h1 style="margin-bottom: 5%;">About us</h1>
   
   </head>
@@ -79,24 +59,27 @@
     </div>
 <br>
 <hr style="margin-top:15%">
+
 <div class="endList">
-  <?php
-    foreach($articles as $article){
-      echo "
-    <a href=". $article[2] ." style=\"text-decoration:none;color:black;\">
+  <a href="meditation4.html" style=\"text-decoration:none;color:black;\">
     <div class=paneUpdate id=myPane style=\"margin-top:2%\">
-    <img src=". $article[1] .">
+    <img src="augustine.jpeg">
     <div class=banner-text>
-    <h4>" . $article[0] ."</h4>
-    <p>". $article[3] ."</p>
-       <h5>" . $article[4] . "</h5>
+    <h4>The First Autobiography: Augustine's Confessions</h4>
+    <p>Thoughts on the work and its author</p>
+       <h5>Desmond Jones</h5>
     </div>
   </div></a>
-  "
-  ;
-    }
-    
-  ?>
+  <a href="meditation3.html" style=\"text-decoration:none;color:black;\">
+    <div class=paneUpdate id=myPane style=\"margin-top:2%\">
+    <img src="jlondon.jpeg">
+    <div class=banner-text>
+    <h4>Thoughts on London's "Sea-Wolf"</h4>
+    <p>Is the will to power admirable or reprehensible?</p>
+       <h5>Desmond Jones</h5>
+    </div>
+  </div></a>
+  
 </div>
 <style>
 .footer {

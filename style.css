@@ -143,6 +143,7 @@ blockquote{
   bottom: 8px;
   width: 100%;
   text-align: center;
+  background-color:black;
 }
 
 /* Number text (1/3 etc) */
@@ -278,6 +279,7 @@ span:hover{
   text-align: center;
   margin:auto;
   padding: 2%;
+  
 }
 
 .pane:hover {
@@ -297,8 +299,6 @@ span:hover{
     background-color:black;
     margin-top:10px;
 }
-.banner img{
-}
 .banner-text {
   position: relative;
   line-height: 1.15;
@@ -310,6 +310,7 @@ span:hover{
 .paneUpdate {
     overflow:hidden;
     max-height: 50%;
+    /*max-width:50%;*/
     max-width:50%;
     position: relative; 
     display: flex;
@@ -326,7 +327,9 @@ span:hover{
 }
 .paneUpdate:hover {
   opacity: 50%;
-  width: 55%; /* width of container */
+  /*width: 55%; 
+  
+  /* width of container */
   /*height: 51; /* height of container 
   color: rgb(245, 245, 245);*/
    background-color: rgb(230, 230, 230);

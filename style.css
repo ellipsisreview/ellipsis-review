@@ -436,16 +436,16 @@ blockquote{
 @media screen and (max-width: 600px) {
   /*.paneUpdate p{
     display:none;
-    }*/
+    }
   .paneUpdate:hover{
     background-color:black;
-  }
+  }*/
   .paneUpdate:hover {
   opacity: 50%;
   width: 100%; /* width of container */
-  /*height: 51; /* height of container */
+  /*height: 51; /* height of container 
   color: rgb(245, 245, 245);
-  background-color:black;
+  background-color:black;*/
 }
   .paneUpdate {
     max-width: 100%; /* width of container */

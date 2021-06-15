@@ -288,7 +288,82 @@ span:hover{
   height: 200px; /* height of container */
   color: rgb(245, 245, 245);
 }
-
+.banner {
+    overflow:hidden;
+    max-height: 500px;
+    position: relative; 
+    display: flex;
+    justify-content:center;
+    color:white;
+    background-color:black;
+    margin-top:10px;
+}
+.banner-text {
+  font-size: 16px;
+  position: relative;
+  line-height: 1.15;
+  align-content: center;
+  margin-left: 1%;
+  margin-right:1%;
+  text-decoration:none;
+  /*font-size: max(1vw, 1px);
+  overflow:hidden;
+    max-height: 50%;
+    /*max-width:50%;*
+    max-width:50%;
+    position: relative; 
+    display: flex;
+    justify-content:flex-start;
+    color:black;
+    background-color:whitesmoke;
+    margin-top:10px;
+    margin:auto;
+    text-decoration:none;*/
+}
+.widthLimitPaneUpdate {
+  max-width:50%;
+  margin:auto;
+  /*
+  overflow:hidden;
+    max-height: 50%;
+    /*max-width:50%;*
+    
+    text-decoration:none;
+    position: relative;
+    display:flex;
+    justify-content:flex-start;
+    margin-top:10px;
+    */
+}
+.paneUpdate {
+    overflow:hidden;
+    max-height: 250px;
+    /*max-width:50%;*/
+    max-width:100%;
+    position: relative; 
+    display: flex;
+    justify-content:flex-start;
+    color:black;
+    background-color:whitesmoke;
+    margin-top:10px;
+    margin:auto;
+    text-decoration: none;
+    
+}
+.pane img{
+  float:left;
+  margin-left:0px;
+}
+.paneUpdate:hover {
+  opacity: 50%;
+  /*width: 55%; 
+  
+  /* width of container */
+  /*height: 51; /* height of container 
+  color: rgb(245, 245, 245);*/
+   background-color: rgb(230, 230, 230);
+}
+/*
 .banner {
     overflow:hidden;
     max-height: 500px;
@@ -310,7 +385,7 @@ span:hover{
 .paneUpdate {
     overflow:hidden;
     max-height: 50%;
-    /*max-width:50%;*/
+    /*max-width:50%;*
     max-width:50%;
     position: relative; 
     display: flex;
@@ -329,11 +404,11 @@ span:hover{
   opacity: 50%;
   /*width: 55%; 
   
-  /* width of container */
+  /* width of container *
   /*height: 51; /* height of container 
-  color: rgb(245, 245, 245);*/
+  color: rgb(245, 245, 245);*
    background-color: rgb(230, 230, 230);
-}
+}*/
 .writings{
     margin-left:20%;
     margin-right:20%;
@@ -374,12 +449,33 @@ blockquote{
 }
   .paneUpdate {
     max-width: 100%; /* width of container */
-    max-height: 100%; /* height of container /
-    overflow: visible;*/
+    max-height: 100%; /* height of container */
+    overflow: visible;
     border: 5px solid white;
     text-align: center;
     color:black;
-    font-size: 5vw;
+    /*font-size: 5vw;*/
+  }
+
+  .widthLimitPaneUpdate {
+  max-width:100%;
+  margin:auto;
+  }
+  /*
+  overflow:hidden;
+    max-height: 50%;
+    /*max-width:50%;*
+    
+    text-decoration:none;
+    position: relative;
+    display:flex;
+    justify-content:flex-start;
+    margin-top:10px;
+    */
+
+  .paneImg{
+    max-width: 55%;
+    max-height:15%;
   }
   .writings{
     margin:2.5%;
@@ -401,7 +497,7 @@ blockquote{
   align-content: center;
   margin-left: 1%;
   margin-right:1%;
-  font-size: 2.55vw;
+  font-size: 3.5vw;
   word-break: break-word;
   }
   .logo {

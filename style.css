@@ -136,8 +136,8 @@ blockquote{
   background-color: rgba(0,0,0,0.8);
 }
 .slideText {
-  background-color: black;
-  color: #f2f2f2;
+  background-color: whitesmoke;
+  color: black;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;

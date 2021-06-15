@@ -59,4 +59,6 @@ function openOrCloseNav() {
     document.getElementById("mySidenav").style.width = "0";
     checkNavOpen = 0;
   }
+  
 }
+

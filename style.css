@@ -107,6 +107,8 @@ blockquote{
   display: none;
 }
 
+
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -133,9 +135,8 @@ blockquote{
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-/* Caption text */
-.text {
+.slideText {
+  background-color: black;
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;

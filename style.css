@@ -348,20 +348,38 @@ span:hover{
     margin-top:10px;
     margin:auto;
     text-decoration: none;
+    transition: background-color .5s;
     
+}
+
+.newBanner {
+  overflow:hidden;
+    max-height: 250px;
+    /*max-width:50%;*/
+    max-width:100%;
+    position: relative; 
+    display: flex;
+    justify-content:flex-start;
+    color:white;
+    background-color:black;
+    margin-top:10px;
+    margin:auto;
+    text-decoration: none;
 }
 .pane img{
   float:left;
   margin-left:0px;
 }
 .paneUpdate:hover {
-  opacity: 50%;
-  /*width: 55%; 
+  /*opacity: 50%;
+  width: 55%; 
   
   /* width of container */
   /*height: 51; /* height of container 
-  color: rgb(245, 245, 245);*/
-   background-color: rgb(230, 230, 230);
+  color: rgb(245, 245, 245);
+   background-color: rgb(230, 230, 230);*/
+   background-color: black;
+   color:white;
 }
 /*
 .banner {
@@ -441,11 +459,12 @@ blockquote{
     background-color:black;
   }*/
   .paneUpdate:hover {
-  opacity: 50%;
+  
   width: 100%; /* width of container */
   /*height: 51; /* height of container 
   color: rgb(245, 245, 245);
-  background-color:black;*/
+  background-color:black;
+  opacity: 50%;*/
 }
   .paneUpdate {
     max-width: 100%; /* width of container */

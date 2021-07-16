@@ -335,6 +335,13 @@ span:hover{
     margin-top:10px;
     */
 }
+.titleWidth {
+  margin-top:2%;
+  margin-left:20%;
+  margin-right:20%;
+  background-color:whitesmoke;
+  color:black;
+}
 .paneUpdate {
     overflow:hidden;
     max-height: 250px;
@@ -480,6 +487,13 @@ blockquote{
   max-width:100%;
   margin:auto;
   }
+  .titleWidth {
+  margin-top:2%;
+  margin-left:20%;
+  margin-right:20%;
+  background-color:whitesmoke;
+  color:black;
+}
   /*
   overflow:hidden;
     max-height: 50%;

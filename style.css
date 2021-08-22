@@ -76,8 +76,9 @@ body {
 }
 .writings {
   text-align: justify;
-  margin-right:5%;
-  margin-left: 5%;
+  margin-right:20%;
+  margin-left: 20%;
+  font-size: 1.25em;
 }
 blockquote{
   margin-right:10%;
@@ -434,10 +435,6 @@ span:hover{
   color: rgb(245, 245, 245);*
    background-color: rgb(230, 230, 230);
 }*/
-.writings{
-    margin-left:20%;
-    margin-right:20%;
-    }
 blockquote{
     margin-left:25%;
     margin-right:25%;
@@ -482,7 +479,9 @@ blockquote{
     color:black;
     /*font-size: 5vw;*/
   }
-
+  .writings{
+    font-size:16px;
+  }
   .widthLimitPaneUpdate {
   max-width:100%;
   margin:auto;

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Note Guesser</title>
+    <link href="noteGuesserStyle.css" rel="stylesheet" type="text/css" />
+    <link rel='icon' href='ellipsisIcon.png' type='image/x-icon'/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href=index.css>
+    <script type="text/javascript" src = "script.js"></script>
+    <div class=topnav id=myTopnav>
+      <a href=index.html><img class="logo" src=ellipsisLong.svg></a>
+      <div class="container" onclick="menuBtnToggle(this)">
+        <span class="menuBtn" onclick="openOrCloseNav()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      
+    </span>
+    </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="latestMeditations.html">Latest</a>
+        <a href="search.html">Search</a>
+      </div>
+      
+      
+    </div>
+  </head>
+  <body>
+    <h2 style="text-align:center">Practice Reading Music</h2>
+    <p style="text-align:center">Click the button with the note that is being represented. How many can you get right?</p>
+    <div class="display">
+    <div id="note" class="note"><!--<div class="stem"></div>--></div>
+    <div class="staff">
+    
+    <!--<img id="noteImg" src="note.svg" style="">-->
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    </div>
+
+    <div class="noteButtonsGrid" style="display:grid;grid-template-areas:'a b c d e f g';margin-top:50px;">
+    <button id="aBtn" class="aBtn">
+      <p>A</p>
+    </button>
+    <button id="bBtn" class="bBtn">
+      <p>B</p>
+    </button>
+    <button id="cBtn" class="cBtn">
+      <p>C</p>
+    </button>
+    <button id="dBtn" class="dBtn">
+      <p>D</p>
+    </button>
+    <button id="eBtn" class="eBtn">
+      <p>E</p>
+    </button>
+    <button id="fBtn" class="fBtn">
+      <p>F</p>
+    </button>
+    <button id="gBtn" class="gBtn">
+      <p>G</p>
+    </button>
+    </div>
+    <p id="results" style="text-align:center;border: 0.1vh solid black;border-radius: 5px;background-color:grey">Results will show here</p>
+    </div>
+    <script src="noteGuesserJS.js"></script>
+  </body>
+</html>
